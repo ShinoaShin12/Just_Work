@@ -6,15 +6,16 @@ import numpy as np
 # Tugas 1 : Dataframe dan AreaChart
 
 """
-
+import streamlit as st
+import pandas as pd
 st.subheader("Nilai UAS dan UTS Matematika")
+
 df_data = pd.DataFrame({
 'Name' : ["Susan", "Budi", "Yanto", "Chika"],
   'UTS': [85, 75, 95, 40],
   'UAS': [70, 80, 80, 65]
 })
-
-st.write(df_data)
+st.table(df_data)
 
 st.subheader("Area chart:")
 
