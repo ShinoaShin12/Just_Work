@@ -29,7 +29,7 @@ area_data = pd.DataFrame({
 area_data = area_data.set_index('Name')
 st.area_chart(area_data)
 """
-# Tugas 2 
+# Tugas 2 : Chart , Widget , Layout
 
 """
 st.subheader("Nilai UAS dan UTS Matematika:")
