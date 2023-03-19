@@ -32,7 +32,7 @@ st.area_chart(area_data)
 # Tugas 2 
 
 """
-st.subheader("Database Nilai UTS dan UAS Data Science :")
+st.subheader("Nilai UAS dan UTS Matematika:")
 import streamlit as st
 import pandas as pd
 df = pd.DataFrame({
@@ -42,13 +42,15 @@ df = pd.DataFrame({
 })
 df
 
-st.subheader("Grafik Nilai UAS dan UTS  Data Science :")
+st.subheader("Line Chart : ")
+st.subheader("Grafik Nilai UAS dan UTS  Matematika :")
 WR = pd.DataFrame({
     'UAS': [70, 80, 80, 65],
     'UTS': [85, 75, 95, 40]
 })
 st.line_chart(WR)
 
+st.subheader("Widget : ")
 agree = st.checkbox('I agree')
 
 if agree:
