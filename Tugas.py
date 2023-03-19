@@ -51,6 +51,9 @@ WR = pd.DataFrame({
 st.line_chart(WR)
 
 st.subheader("Widget : ")
+nilai = st.slider('Berapa Nilai UAS :', 0, 100, 50)
+st.write('Nilai UAS saya adalah : ', nilai)
+
 agree = st.checkbox('I agree')
 
 if agree:
