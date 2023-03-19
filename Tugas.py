@@ -51,14 +51,17 @@ WR = pd.DataFrame({
 st.line_chart(WR)
 
 st.subheader("Widget : ")
-nilai = st.slider('Berapa Nilai UAS :', 0, 100, 50)
+nilai = st.slider('Berapa Nilai UAS Matematika :', 0, 100, 50)
 st.write('Nilai UAS saya adalah : ', nilai)
+nilai1 = st.slider('Berapa Nilai UTS Matematika :', 0, 100, 50)
+st.write('Nilai UAS saya adalah : ', nilai1)
 
 agree = st.checkbox('I agree')
 
 if agree:
     st.write('Thanks You')
 
+st.subheader("Layout : ")
 col1, col2 = st.columns([3, 1])
 col1.subheader("A wide column with a chart")
 col1.line_chart(WR)
