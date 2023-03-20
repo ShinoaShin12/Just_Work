@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import time
 from PIL import Image
 
 '''
@@ -67,7 +68,6 @@ container.write("This is inside too")
 
 
 st.subheader("8. Status Element :")
-import time
 
 progress_text = "Operation in progress. Please wait."
 my_bar = st.progress(0, text=progress_text)
@@ -75,6 +75,9 @@ my_bar = st.progress(0, text=progress_text)
 for percent_complete in range(100):
     time.sleep(0.1)
     my_bar.progress(percent_complete + 1, text=progress_text)
+   
+progres = "Operation in progress. Please wait."
+my_bar = st.progress(0, text=progress_text)
 for percent_complete in range(75):
     time.sleep(0.1)
-    my_bar.progress(percent_complete + 1, text=progress_text)
+    my_bar.progress(percent_complete + 1, text=progres)
