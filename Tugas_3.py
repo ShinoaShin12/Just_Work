@@ -44,12 +44,18 @@ st.image(image, caption='# Magic Circle')
 
 st.subheader("7. Layout & Container :")
 st.subheader("Layout :")
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
+col1, col2, col3 = st.columns(3)
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
+with col1:
+   st.header("A Magic Circle")
+   st.image("./magic circle1.png")
+
+with col2:
+   st.header("A Aura")
+   st.image("./magic_circle.png")
+
+with col3:
+   st.header("An owl")
+   st.image("./shield_Edit.png")
  
 st.subheader("Container :")
