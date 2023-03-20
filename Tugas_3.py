@@ -93,3 +93,12 @@ my_bar = st.progress(0, text=progress_text)
 for percent_complete in range(25):
     time.sleep(0.1)
     my_bar.progress(percent_complete + 1, text=progres2)
+
+
+st.subheader("9. Control Flow :")
+
+name = st.text_input('Name')
+if not name:
+  st.warning('Please input a name.')
+  st.stop()
+st.success('Thank you for inputting a name.')
