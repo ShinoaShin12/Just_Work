@@ -6,6 +6,12 @@ import numpy as np
 # Tugas 3
 '''
 
+st.subheader("1. Write and Magic")
+
+st.subheader("Write : ")
+st.write('Hello William')
+
+st.subheader("Magic : ")
 '''
-1. Write and Magic 
+Hello William
 '''
