@@ -77,3 +77,14 @@ col2.write(df)
 Latihan 2 : Chart , Widget , Layout
 
 """
+
+@st.cache_data(ttl=600)
+def load_data(sheets_url):
+    csv_url = sheets_url.replace("/edit#gid=", "/export?format=csv&gid=")
+    return pd.read_csv(csv_url)
+
+df = load_data(st.secrets["public_gsheets_url"])
+
+# Print results.
+for row in df.itertuples():
+    st.write(f"{row.name} mendapat nilai uas :{row.UAS}: dan nilai uts :{row.UTS}:")
