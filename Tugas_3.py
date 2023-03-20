@@ -42,3 +42,14 @@ image = Image.open('./magic circle1.png')
 
 st.image(image, caption='# Magic Circle')
 
+st.subheader("7. Layout & Container :")
+st.subheader("Layout :")
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
+ 
+st.subheader("Container :")
