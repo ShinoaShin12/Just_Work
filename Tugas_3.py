@@ -51,11 +51,16 @@ with col1:
    st.image("./magic circle1.png")
 
 with col2:
-   st.header("A Aura")
+   st.header("A Barrier_Circle")
    st.image("./magic_circle.png")
 
 with col3:
-   st.header("An owl")
+   st.header("A Aura Circle")
    st.image("./shield_Edit.png")
  
 st.subheader("Container :")
+container = st.container()
+container.write("This is inside the container")
+st.write("This is outside the container")
+
+container.write("This is inside too")
