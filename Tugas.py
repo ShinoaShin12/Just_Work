@@ -87,4 +87,4 @@ df = load_data(st.secrets["public_gsheets_url"])
 
 # Print results.
 for row in df.itertuples():
-    st.write(f"{row.Name} mendapat nilai uas :{row.UAS}:")
+    st.write(f"{row.Name} mendapat nilai UAS :{row.UAS} & nilai UTS :{row.UTS}")
