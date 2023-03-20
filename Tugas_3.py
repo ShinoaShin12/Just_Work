@@ -102,3 +102,11 @@ if not name:
   st.warning('Please input a name.')
   st.stop()
 st.success('Thank you for inputting a name.')
+
+st.subheader("10. Utilities :")
+df_data = pd.DataFrame({
+'Name' : ["Susan", "Budi", "Yanto", "Chika"],
+  'UTS': [85, 75, 95, 40],
+  'UAS': [70, 80, 80, 65]
+})
+st.experimental_show(df_data)
