@@ -29,7 +29,8 @@ area_data = pd.DataFrame({
 area_data = area_data.set_index('Name')
 st.area_chart(area_data)
 """
-# Tugas 2 : Chart , Widget , Layout
+# Tugas 2 :  
+Latihan 1 : Chart , Widget , Layout
 
 """
 st.subheader("Nilai UAS dan UTS Matematika:")
@@ -68,3 +69,11 @@ col1.line_chart(WR)
 
 col2.subheader("A narrow column with the data")
 col2.write(df)
+
+
+"""
+
+# Tugas 2 :  
+Latihan 2 : Chart , Widget , Layout
+
+"""
