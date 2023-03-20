@@ -52,7 +52,7 @@ with col1:
    st.image("./magic circle1.png")
 
 with col2:
-   st.header("A Barrier_Circle")
+   st.header("A Barrier")
    st.image("./magic_circle.png")
 
 with col3:
@@ -81,3 +81,15 @@ my_bar = st.progress(0, text=progress_text)
 for percent_complete in range(75):
     time.sleep(0.1)
     my_bar.progress(percent_complete + 1, text=progres)
+
+progres1 = "Operation in progress. Please wait."
+my_bar = st.progress(0, text=progress_text)
+for percent_complete in range(50):
+    time.sleep(0.1)
+    my_bar.progress(percent_complete + 1, text=progres1)
+
+progres2 = "Operation in progress. Please wait."
+my_bar = st.progress(0, text=progress_text)
+for percent_complete in range(25):
+    time.sleep(0.1)
+    my_bar.progress(percent_complete + 1, text=progres2)
