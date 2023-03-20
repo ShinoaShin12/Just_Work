@@ -37,7 +37,7 @@ age = st.slider('How old are you?', 0, 100, 50)
 st.write("I'm ", age, 'years old')
 
 st.subheader("6. Media Element :")
-image = Image.open('magic circle1.png')
+image = Image.open('./magic circle1.png')
 
 st.image(image, caption='# Magic Circle')
 
